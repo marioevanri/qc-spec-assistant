@@ -4,7 +4,7 @@ An assistant for QC staff at a creamer and milk powder plant. It answers questio
 
 Built as a capstone project for IBM SkillsBuild x Hacktiv8. Prototyped in Langflow, deployed with Streamlit.
 
-**Live demo:** _add your Streamlit link here_
+**Live demo:** [qc-spec-assistant-mario.streamlit.app](https://qc-spec-assistant-mario.streamlit.app/)
 
 > All documents in this repo are fictional and do not come from any real company.
 
