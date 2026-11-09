@@ -2,7 +2,7 @@
 
 An assistant for QC staff at a creamer and milk powder plant. It answers questions about product specifications and QC SOPs using only the provided documents, and every answer ends with its source. If the answer isn't in the documents, it says so instead of guessing.
 
-Built as a capstone project for IBM SkillsBuild x Hacktiv8. Prototyped in Langflow, deployed with Streamlit.
+Built as a capstone project for IBM SkillsBuild x Hacktiv8. Prototyped in Langflow, then rebuilt in Python and deployed with Streamlit.
 
 **Live demo:** [qc-spec-assistant-mario.streamlit.app](https://qc-spec-assistant-mario.streamlit.app/)
 
