@@ -1,0 +1,82 @@
+﻿id,tipe,pertanyaan,jawaban_benar,sumber,kata_kunci,model,prompt,jawaban_model,cek_otomatis,cek_manual,catatan_review
+Q01,lookup,Berapa batas maksimal kadar air NDC-35?,Maksimal 3.0%.,"Spesifikasi Produk, NDC-35, Kadar air","3.0|3,0",gemini-3.5-flash-lite,v2,"Batas maksimal kadar air untuk NDC-35 adalah 3,0%.
+
+Sumber: Spesifikasi Produk, NDC-35, Kadar air",OK,benar,
+Q02,lookup,Shelf life FFP-26 berapa lama?,12 bulan dalam kemasan asli yang belum dibuka.,"Spesifikasi Produk, FFP-26, Umur simpan",12 bulan,gemini-3.5-flash-lite,v2,"Umur simpan FFP-26 adalah 12 bulan dalam kemasan asli yang belum dibuka.
+Sumber: Spesifikasi Produk, FFP-26, Umur simpan.",OK,benar,
+Q03,lookup,Kadar lemak NDC-28 harus di rentang berapa?,26.0 sampai 30.0%.,"Spesifikasi Produk, NDC-28, Kadar lemak",26;30,gemini-3.5-flash-lite,v2,"Kadar lemak NDC-28 harus berada di rentang 26,0% sampai 30,0%.
+
+Sumber: Spesifikasi Produk, NDC-28, Kadar lemak",OK,benar,
+Q04,lookup,Protein minimal untuk FFP-26 berapa?,Minimal 18.0%.,"Spesifikasi Produk, FFP-26, Protein",18,gemini-3.5-flash-lite,v2,"Kadar protein minimal untuk FFP-26 adalah 18.0%.
+
+Sumber: Spesifikasi Produk, FFP-26, Protein",OK,benar,
+Q05,lookup,Batas Angka Lempeng Total untuk FFP-26 berapa?,Maksimal 10000 koloni/g.,"Spesifikasi Produk, FFP-26, Angka Lempeng Total","10000|10.000|10,000|10^4|10⁴",gemini-3.5-flash-lite,v2,"Batas Angka Lempeng Total untuk FFP-26 adalah maksimal 5000 koloni/g.
+Sumber: Spesifikasi Produk, FFP-26, Angka Lempeng Total",CEK,salah,"Menyebut maksimal 5000 koloni/g, itu batas NDC-35, NDC-28, dan KRM-R500. Batas FFP-26 10000. Lebih buruk dari v1 karena kali ini tanpa ralat."
+Q06,lookup,Umur simpan KRM-R500 sama NDC-35 beda nggak?,"Beda. KRM-R500 12 bulan (pouch), NDC-35 18 bulan (sak 25 kg).","Spesifikasi Produk, KRM-R500 dan NDC-35, Umur simpan",12;18,gemini-3.5-flash-lite,v2,"Nilai umur simpan masing-masing produk adalah:
+- KRM-R500: 12 bulan dalam kemasan asli yang belum dibuka
+- NDC-35: 18 bulan dalam kemasan asli yang belum dibuka
+
+Karena 12 bulan dan 18 bulan tidak sama, maka umur simpan KRM-R500 dan NDC-35 berbeda.
+
+Sumber: Spesifikasi Produk, KRM-R500, Umur simpan & NDC-35, Umur simpan",OK,benar,
+Q07,lookup,Berat bersih minimal per kemasan KRM-R500 berapa?,"Rata-rata per lot minimal 500 g, per kemasan boleh kurang maksimal 15 g sehingga minimal 485 g.","Spesifikasi Produk, KRM-R500, Berat bersih",485,gemini-3.5-flash-lite,v2,"Berat bersih minimal per kemasan KRM-R500 adalah minimal 485 g (kekurangan per kemasan maksimal 15 g dari rata-rata per lot minimal 500 g).
+
+Sumber: Spesifikasi Produk, KRM-R500, Berat bersih",OK,benar,
+Q08,lookup,Kondisi penyimpanan NDC-35 seperti apa?,"Suhu maksimal 30 °C, RH maksimal 70%, tidak kena sinar matahari langsung, palet minimal 30 cm dari dinding.","Spesifikasi Produk, NDC-35, Kondisi simpan",30;70,gemini-3.5-flash-lite,v2,"Kondisi simpan untuk NDC-35 adalah suhu maksimal 30 °C, RH maksimal 70%, tidak terkena sinar matahari langsung, dan palet berjarak minimal 30 cm dari dinding.
+
+Sumber: Spesifikasi Produk, NDC-35, Kondisi simpan",OK,benar,
+Q09,prosedur,Suhu air untuk uji feathering berapa?,"85 ± 2 °C, memakai air demineral.",SOP-QC-02 Bagian B.1,85,gemini-3.5-flash-lite,v2,"Suhu air untuk uji feathering adalah 85 ± 2 °C.
+
+Sumber: SOP-QC-02 Bagian B",OK,benar,
+Q10,prosedur,Berapa gram sampel untuk uji kadar air pakai moisture analyzer?,"5,0 ± 0,2 g.",SOP-QC-01 bagian 4.2,"5,0|5.0|5 g",gemini-3.5-flash-lite,v2,"Jumlah sampel untuk pengujian kadar air menggunakan moisture analyzer adalah 5,0 ± 0,2 g.
+
+Sumber: SOP-QC-01 bagian 4.2",OK,benar,
+Q11,prosedur,Selisih duplo kadar air maksimal berapa?,"Maksimal 0,15% absolut. Kalau lebih, ulangi dengan sampel baru.",SOP-QC-01 bagian 4.4,"0,15|0.15",gemini-3.5-flash-lite,v2,"Selisih duplo kadar air maksimal adalah 0,15% absolut.
+Sumber: SOP-QC-01 bagian 4.4",OK,benar,
+Q12,prosedur,"Kalau hasil kadar air di atas batas, apa yang harus dilakukan?","Retest dengan sampel baru dari titik sampling sama oleh analis berbeda. Kalau tetap di atas batas, batch jadi HOLD, isi FK-QC-07, lapor Supervisor QC maksimal 2 jam. Keputusan akhir oleh QA Manager.",SOP-QC-01 bagian 6,HOLD|hold;FK-QC-07,gemini-3.5-flash-lite,v2,"Tindakan jika hasil kadar air di atas batas spesifikasi adalah:
+1. Lakukan uji ulang (retest) menggunakan sampel baru dari titik sampling yang sama, yang dikerjakan oleh analis yang berbeda.
+2. Jika hasil retest tetap di atas batas, ubah status batch menjadi HOLD, isi Formulir Ketidaksesuaian FK-QC-07, dan laporkan ke Supervisor QC paling lambat 2 jam setelah hasil keluar.
+3. Keputusan akhir (release, rework, atau reject) ditetapkan oleh QA Manager.
+
+Sumber: SOP-QC-01 bagian 6",OK,benar,
+Q13,prosedur,Retained sample NDC-35 harus disimpan berapa lama?,24 bulan (umur simpan 18 bulan + 6 bulan).,"SOP-QC-03 bagian 4.3 dan Spesifikasi Produk, NDC-35, Umur simpan",24 bulan,gemini-3.5-flash-lite,v2,"Retained sample NDC-35 harus disimpan selama umur simpan produk ditambah 6 bulan (umur simpan NDC-35 adalah 18 bulan).
+
+Sumber: SOP-QC-03 bagian 4.3 dan Spesifikasi Produk, NDC-35, Umur simpan.",CEK,salah,Masih tidak menghitung 18 + 6 = 24 bulan.
+Q14,prosedur,Batch boleh di-hold paling lama berapa hari?,Maksimal 14 hari kalender.,SOP-QC-03 bagian 3,14 hari,gemini-3.5-flash-lite,v2,"Batch berstatus HOLD paling lama 14 hari kalender.
+
+Sumber: SOP-QC-03 bagian 3",OK,benar,
+Q15,keluhan,Customer nemu potongan plastik di dalam sak. Masuk severity apa dan kapan harus direspons?,"Kritis. Respon awal 1 x 24 jam, laporan investigasi 7 hari kalender. Minta customer simpan bukti fisik dan kirim foto.","SOP-QC-04 bagian 1.1, 2, dan 4",Kritis|kritis;24 jam,gemini-3.5-flash-lite,v2,"Temuan potongan plastik di dalam sak diklasifikasikan sebagai severity Kritis karena termasuk keluhan yang berpotensi membahayakan konsumen berupa benda asing. Respon awal ke customer harus diberikan dalam waktu 1 x 24 jam, dan laporan investigasi harus diselesaikan dalam 7 hari kalender.
+
+Sumber: SOP-QC-04 bagian 1 dan 2",OK,benar,
+Q16,keluhan,Ada 3 customer berbeda komplain bau tengik di batch yang sama. Apa yang harus dilakukan?,"Investigasi tingkat batch dan HOLD sisa stok batch di gudang sampai investigasi selesai, cek retained sample, cari akar masalah dengan 5 Why, lalu CAPA.",SOP-QC-04 bagian 3,batch;HOLD|hold,gemini-3.5-flash-lite,v2,"Keluhan terkait bau tengik tidak mengganggu pemakaian produk maupun produksi customer, sehingga diklasifikasikan sebagai keluhan dengan severity **Minor**. Berdasarkan SOP, respon awal ke customer untuk keluhan minor adalah dalam waktu 7 hari kerja dan membuat tanggapan tertulis (laporan investigasi tidak wajib). Langkah penanganannya meliputi: daftarkan keluhan dan beri nomor keluhan, periksa retained sample dari batch yang dikeluhkan, serta periksa apakah ada keluhan lain pada batch yang sama. Karena ada 3 keluhan (yang berarti terdapat 2 keluhan sejenis atau lebih dari customer yang berbeda pada batch yang sama dalam 30 hari), lakukan investigasi tingkat batch dan ubah status sisa stok batch tersebut di gudang menjadi HOLD sampai hasil investigasi keluar. Selanjutnya cari akar masalah dengan metode 5 Why, tetapkan tindakan perbaikan dan pencegahan (CAPA), lalu kirim tanggapan tertulis ke customer.
+
+Sumber: SOP-QC-04 bagian 1 dan 3",OK,salah,"Menyimpulkan bau tengik severity Minor dengan respon 7 hari kerja, padahal produk tengik tidak bisa dipakai normal (Mayor). Kesalahan baru yang tidak ada di v1."
+Q17,keluhan,Keluhan zipper pouch susah dibuka masuk severity apa?,"Minor, respon awal 7 hari kerja.",SOP-QC-04 bagian 1.3 dan 2,Minor|minor,gemini-3.5-flash-lite,v2,"Keluhan zipper pouch susah dibuka diklasifikasikan sebagai severity minor, karena keluhan ini tidak mengganggu pemakaian produk maupun produksi customer.
+
+Sumber: SOP-QC-04 bagian 1.3",OK,benar,
+Q18,perbandingan,"Hasil kadar air NDC-28 batch terakhir 3,6%. Masih masuk spek?",Di luar spesifikasi. Batas maksimal 3.5%. Lakukan retest sesuai SOP-QC-01 bagian 6.,"Spesifikasi Produk, NDC-28, Kadar air dan SOP-QC-01 bagian 6","3.5|3,5;Di luar|di luar|tidak|melebihi",gemini-3.5-flash-lite,v2,"Batas maksimal kadar air untuk Non-Dairy Creamer 28 (NDC-28) adalah maksimal 3,5%. Hasil uji 3,6% berada di atas batas maksimal tersebut, sehingga dinyatakan di luar spesifikasi.
+Sumber: Spesifikasi Produk, NDC-28, Kadar air",OK,benar,"Benar, tapi tidak lagi menyebut tindakan retest SOP-QC-01 bagian 6 seperti v1."
+Q19,perbandingan,"pH larutan FFP-26 hasilnya 7,2. Lulus nggak?",Di luar spesifikasi. Rentang pH FFP-26 6.4 sampai 7.0.,"Spesifikasi Produk, FFP-26, pH larutan 10%","7.0|7,0;Di luar|di luar|tidak|melebihi",gemini-3.5-flash-lite,v2,"Batas spesifikasi pH larutan 10% untuk FFP-26 adalah rentang 6.4 sampai 7.0.
+Hasil uji Anda adalah 7,2, yang berada di atas batas maksimal spesifikasi.
+Kesimpulan: Di luar spesifikasi.
+
+Sumber: Spesifikasi Produk, FFP-26, pH larutan 10%",OK,benar,
+Q20,jebakan,Berapa spesifikasi viskositas WTP-20?,Tidak ditemukan di dokumen. WTP-20 dan parameter viskositas tidak ada di tabel spesifikasi.,Tidak ada,tidak ditemukan|Tidak ditemukan,gemini-3.5-flash-lite,v2,"Tidak ditemukan di dokumen. Parameter terdekat yang ada di tabel spesifikasi adalah kadar air, kadar lemak, protein, indeks tidak larut, pH, bulk density, warna bubuk, dan parameter mikrobiologi untuk produk NDC-35, NDC-28, FFP-26, dan KRM-R500, tetapi tidak ada produk bernama WTP-20 atau parameter viskositas. 
+
+Sumber: Tidak ditemukan di dokumen.",OK,benar,
+Q21,jebakan,Harga NDC-35 per kg berapa?,Tidak ditemukan di dokumen.,Tidak ada,tidak ditemukan|Tidak ditemukan,gemini-3.5-flash-lite,v2,"Tidak ditemukan di dokumen. Informasi terdekat yang ada adalah tabel spesifikasi produk NDC-35 yang mencakup parameter mutu, kemasan berupa sak kraft 25 kg dengan inner PE, serta kondisi dan umur simpan.
+
+Sumber: Spesifikasi Produk, NDC-35, Kondisi simpan",OK,benar,
+Q22,jebakan,Umur simpan NDC-35 kalau dikemas pouch 1 kg berapa?,Tidak ditemukan di dokumen. Dokumen hanya mencantumkan NDC-35 kemasan sak 25 kg dengan umur simpan 18 bulan.,"Tidak ada (terdekat: Spesifikasi Produk, NDC-35, Umur simpan)",tidak ditemukan|Tidak ditemukan|tidak ada|Tidak ada,gemini-3.5-flash-lite,v2,"Tidak ditemukan di dokumen. Informasi terdekat yang ada adalah umur simpan NDC-35 dalam kemasan sak kraft 25 kg dengan inner PE adalah 18 bulan dalam kemasan asli yang belum dibuka.
+
+Sumber: Spesifikasi Produk, NDC-35, Umur simpan",OK,benar,
+Q23,jebakan,Siapa supplier kasein untuk NDC-35?,Tidak ditemukan di dokumen.,Tidak ada,tidak ditemukan|Tidak ditemukan,gemini-3.5-flash-lite,v2,"Tidak ditemukan di dokumen. Informasi terdekat yang ada dalam dokumen adalah parameter spesifikasi produk, metode uji, dan prosedur pengujian Quality Control.
+
+Sumber: Spesifikasi Produk NDC-35",OK,benar,
+Q24,jebakan,Bagaimana prosedur uji kadar lemak?,"Dokumen hanya menyebut metode Mojonnier, prosedurnya tidak ada di dokumen.","Spesifikasi Produk, kolom metode_uji Kadar lemak",Mojonnier;tidak,gemini-3.5-flash-lite,v2,"Tidak ditemukan di dokumen prosedur uji kadar lemak secara lengkap; dokumen hanya menyebutkan bahwa metode uji yang digunakan adalah Mojonnier (prosedur di luar dokumen ini). Informasi terdekat adalah daftar batas spesifikasi kadar lemak untuk setiap produk, yaitu:
+- NDC-35: 33.0 sampai 37.0 %
+- NDC-28: 26.0 sampai 30.0 %
+- FFP-26: 25.0 sampai 27.0 %
+- KRM-R500: 33.0 sampai 37.0 %
+
+Sumber: Spesifikasi Produk, masing-masing kode produk, Kadar lemak",OK,benar,

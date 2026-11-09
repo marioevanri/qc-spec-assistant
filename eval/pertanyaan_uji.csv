@@ -1,0 +1,25 @@
+id,tipe,pertanyaan,jawaban_benar,sumber,kata_kunci
+Q01,lookup,Berapa batas maksimal kadar air NDC-35?,Maksimal 3.0%.,"Spesifikasi Produk, NDC-35, Kadar air","3.0|3,0"
+Q02,lookup,Shelf life FFP-26 berapa lama?,12 bulan dalam kemasan asli yang belum dibuka.,"Spesifikasi Produk, FFP-26, Umur simpan",12 bulan
+Q03,lookup,Kadar lemak NDC-28 harus di rentang berapa?,26.0 sampai 30.0%.,"Spesifikasi Produk, NDC-28, Kadar lemak",26;30
+Q04,lookup,Protein minimal untuk FFP-26 berapa?,Minimal 18.0%.,"Spesifikasi Produk, FFP-26, Protein",18
+Q05,lookup,Batas Angka Lempeng Total untuk FFP-26 berapa?,Maksimal 10000 koloni/g.,"Spesifikasi Produk, FFP-26, Angka Lempeng Total","10000|10.000|10,000|10^4|10⁴"
+Q06,lookup,Umur simpan KRM-R500 sama NDC-35 beda nggak?,"Beda. KRM-R500 12 bulan (pouch), NDC-35 18 bulan (sak 25 kg).","Spesifikasi Produk, KRM-R500 dan NDC-35, Umur simpan",12;18
+Q07,lookup,Berat bersih minimal per kemasan KRM-R500 berapa?,"Rata-rata per lot minimal 500 g, per kemasan boleh kurang maksimal 15 g sehingga minimal 485 g.","Spesifikasi Produk, KRM-R500, Berat bersih",485
+Q08,lookup,Kondisi penyimpanan NDC-35 seperti apa?,"Suhu maksimal 30 °C, RH maksimal 70%, tidak kena sinar matahari langsung, palet minimal 30 cm dari dinding.","Spesifikasi Produk, NDC-35, Kondisi simpan",30;70
+Q09,prosedur,Suhu air untuk uji feathering berapa?,"85 ± 2 °C, memakai air demineral.",SOP-QC-02 Bagian B.1,85
+Q10,prosedur,Berapa gram sampel untuk uji kadar air pakai moisture analyzer?,"5,0 ± 0,2 g.",SOP-QC-01 bagian 4.2,"5,0|5.0|5 g"
+Q11,prosedur,Selisih duplo kadar air maksimal berapa?,"Maksimal 0,15% absolut. Kalau lebih, ulangi dengan sampel baru.",SOP-QC-01 bagian 4.4,"0,15|0.15"
+Q12,prosedur,"Kalau hasil kadar air di atas batas, apa yang harus dilakukan?","Retest dengan sampel baru dari titik sampling sama oleh analis berbeda. Kalau tetap di atas batas, batch jadi HOLD, isi FK-QC-07, lapor Supervisor QC maksimal 2 jam. Keputusan akhir oleh QA Manager.",SOP-QC-01 bagian 6,HOLD|hold;FK-QC-07
+Q13,prosedur,Retained sample NDC-35 harus disimpan berapa lama?,24 bulan (umur simpan 18 bulan + 6 bulan).,"SOP-QC-03 bagian 4.3 dan Spesifikasi Produk, NDC-35, Umur simpan",24 bulan
+Q14,prosedur,Batch boleh di-hold paling lama berapa hari?,Maksimal 14 hari kalender.,SOP-QC-03 bagian 3,14 hari
+Q15,keluhan,Customer nemu potongan plastik di dalam sak. Masuk severity apa dan kapan harus direspons?,"Kritis. Respon awal 1 x 24 jam, laporan investigasi 7 hari kalender. Minta customer simpan bukti fisik dan kirim foto.","SOP-QC-04 bagian 1.1, 2, dan 4",Kritis|kritis;24 jam
+Q16,keluhan,Ada 3 customer berbeda komplain bau tengik di batch yang sama. Apa yang harus dilakukan?,"Investigasi tingkat batch dan HOLD sisa stok batch di gudang sampai investigasi selesai, cek retained sample, cari akar masalah dengan 5 Why, lalu CAPA.",SOP-QC-04 bagian 3,batch;HOLD|hold
+Q17,keluhan,Keluhan zipper pouch susah dibuka masuk severity apa?,"Minor, respon awal 7 hari kerja.",SOP-QC-04 bagian 1.3 dan 2,Minor|minor
+Q18,perbandingan,"Hasil kadar air NDC-28 batch terakhir 3,6%. Masih masuk spek?",Di luar spesifikasi. Batas maksimal 3.5%. Lakukan retest sesuai SOP-QC-01 bagian 6.,"Spesifikasi Produk, NDC-28, Kadar air dan SOP-QC-01 bagian 6","3.5|3,5;Di luar|di luar|tidak|melebihi"
+Q19,perbandingan,"pH larutan FFP-26 hasilnya 7,2. Lulus nggak?",Di luar spesifikasi. Rentang pH FFP-26 6.4 sampai 7.0.,"Spesifikasi Produk, FFP-26, pH larutan 10%","7.0|7,0;Di luar|di luar|tidak|melebihi"
+Q20,jebakan,Berapa spesifikasi viskositas WTP-20?,Tidak ditemukan di dokumen. WTP-20 dan parameter viskositas tidak ada di tabel spesifikasi.,Tidak ada,tidak ditemukan|Tidak ditemukan
+Q21,jebakan,Harga NDC-35 per kg berapa?,Tidak ditemukan di dokumen.,Tidak ada,tidak ditemukan|Tidak ditemukan
+Q22,jebakan,Umur simpan NDC-35 kalau dikemas pouch 1 kg berapa?,Tidak ditemukan di dokumen. Dokumen hanya mencantumkan NDC-35 kemasan sak 25 kg dengan umur simpan 18 bulan.,"Tidak ada (terdekat: Spesifikasi Produk, NDC-35, Umur simpan)",tidak ditemukan|Tidak ditemukan|tidak ada|Tidak ada
+Q23,jebakan,Siapa supplier kasein untuk NDC-35?,Tidak ditemukan di dokumen.,Tidak ada,tidak ditemukan|Tidak ditemukan
+Q24,jebakan,Bagaimana prosedur uji kadar lemak?,"Dokumen hanya menyebut metode Mojonnier, prosedurnya tidak ada di dokumen.","Spesifikasi Produk, kolom metode_uji Kadar lemak",Mojonnier;tidak

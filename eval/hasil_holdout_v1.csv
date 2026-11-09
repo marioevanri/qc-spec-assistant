@@ -1,0 +1,30 @@
+﻿id,tipe,pertanyaan,jawaban_benar,sumber,kata_kunci,model,prompt,jawaban_model,cek_otomatis,cek_manual,catatan_review
+H01,lookup,Batas kapang dan khamir untuk FFP-26 berapa?,Maksimal 100 koloni/g.,"Spesifikasi Produk, FFP-26, Kapang dan khamir",100 koloni,gemini-3.5-flash-lite,v1,"Batas maksimal kapang dan khamir untuk FFP-26 adalah 100 koloni/g.
+
+Sumber: Spesifikasi Produk, FFP-26, Kapang dan khamir",OK,benar,
+H02,lookup,Bulk density NDC-28 harus di rentang berapa?,0.38 sampai 0.52 g/ml.,"Spesifikasi Produk, NDC-28, Bulk density","0.38|0,38;0.52|0,52",gemini-3.5-flash-lite,v1,"Bulk density NDC-28 harus berada di rentang 0,38 sampai 0,52 g/ml.
+
+Sumber: Spesifikasi Produk, NDC-28, Bulk density",OK,benar,
+H03,lookup,Batas maksimal kadar air NDC-35 sama KRM-R500 sama nggak?,"Sama, keduanya maksimal 3.0%.","Spesifikasi Produk, NDC-35 dan KRM-R500, Kadar air","sama|Sama;3.0|3,0",gemini-3.5-flash-lite,v1,"Ya, sama. Batas maksimal kadar air untuk NDC-35 dan KRM-R500 adalah maksimal 3,0%.
+
+Sumber: Spesifikasi Produk, NDC-35 / KRM-R500, Kadar air",OK,benar,
+H04,prosedur,Retained sample FFP-26 disimpan berapa lama?,18 bulan (umur simpan 12 bulan + 6 bulan).,"SOP-QC-03 bagian 4.3 dan Spesifikasi Produk, FFP-26, Umur simpan",12;18 bulan,gemini-3.5-flash-lite,v1,"Retained sample disimpan selama umur simpan produk ditambah 6 bulan. Untuk FFP-26, umur simpannya adalah 12 bulan dalam kemasan asli yang belum dibuka, sehingga retained sample disimpan selama 12 bulan + 6 bulan = 18 bulan.
+
+Sumber: SOP-QC-03 bagian 4.3 dan Spesifikasi Produk, FFP-26, Umur simpan.",OK,benar,
+H05,keluhan,Customer bilang krimer menggumpal sampai mixer mereka macet dan produksi berhenti. Severity apa dan kapan respon awal?,"Mayor, karena menghentikan produksi customer. Respon awal 3 hari kerja, laporan investigasi 14 hari kalender.",SOP-QC-04 bagian 1.2 dan 2,Mayor|mayor;3 hari kerja,gemini-3.5-flash-lite,v1,"Severity: Mayor (karena membuat produksi customer terhenti).
+Respon awal ke customer: 3 hari kerja.
+
+Sumber: SOP-QC-04 bagian 1.2 dan bagian 2",OK,benar,
+H06,perbandingan,Satu pouch KRM-R500 hasil timbangnya 480 g. Masuk spek?,Di luar spesifikasi. Berat per kemasan minimal 485 g (kekurangan maksimal 15 g dari 500 g).,"Spesifikasi Produk, KRM-R500, Berat bersih",485;di luar|Di luar,gemini-3.5-flash-lite,v1,"Batas spesifikasi berat bersih KRM-R500: rata-rata per lot minimal 500 g dengan kekurangan per kemasan maksimal 15 g (berat per kemasan minimal 485 g).
+Hasil uji: 480 g (berada di bawah batas minimal 485 g).
+Kesimpulan: Di luar spesifikasi.
+Sumber: Spesifikasi Produk, KRM-R500, Berat bersih",OK,benar,
+H07,perbandingan,"Indeks tidak larut FFP-26 hasilnya 1,2 ml. Masuk spek? Tindakannya apa?","Di luar spesifikasi, batas maksimal 1.0 ml. Tindakan khusus untuk indeks tidak larut tidak ada di dokumen. Menurut SOP-QC-03 bagian 1, batch belum boleh di-release karena tidak semua parameter memenuhi syarat. Salah kalau memakai prosedur retest SOP-QC-01 bagian 6, karena itu khusus kadar air.","Spesifikasi Produk, FFP-26, Indeks tidak larut dan SOP-QC-03 bagian 1","1.0|1,0;di luar|Di luar",gemini-3.5-flash-lite,v1,"Batas spesifikasi Indeks tidak larut untuk FFP-26 adalah maksimal 1,0 ml. 
+Dengan hasil uji 1,2 ml, maka sampel tersebut berada **di luar spesifikasi**.
+
+Sumber: 
+- Spesifikasi Produk, FFP-26, Indeks tidak larut
+- SOP-QC-01 Bagian 6 (prosedur penanganan hasil di atas batas spesifikasi untuk parameter uji lab)",OK,salah,"Menerapkan SOP-QC-01 bagian 6 yang khusus kadar air ke indeks tidak larut, dan tidak menjawab pertanyaan tindakannya."
+H08,jebakan,Bagaimana kriteria uji feathering untuk FFP-26?,"Tidak berlaku. Uji feathering hanya untuk NDC-35, NDC-28, dan KRM-R500, dan FFP-26 tidak punya parameter feathering.",SOP-QC-02 Bagian B,tidak berlaku|Tidak berlaku|tidak ditemukan|Tidak ditemukan|hanya untuk|tidak termasuk,gemini-3.5-flash-lite,v1,"Tidak ditemukan di dokumen. Uji feathering hanya berlaku untuk produk NDC-35, NDC-28, dan KRM-R500, sedangkan untuk FFP-26 parameter feathering tidak tercantum.
+
+Sumber: SOP-QC-02 Bagian B",OK,benar,

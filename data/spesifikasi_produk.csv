@@ -1,0 +1,56 @@
+kode_produk,nama_produk,kemasan,parameter,satuan,batas_min,batas_maks,syarat,metode_uji
+NDC-35,Non-Dairy Creamer 35,Sak kraft 25 kg dengan inner PE,Kadar lemak,%,33.0,37.0,,Mojonnier (prosedur di luar dokumen ini)
+NDC-35,Non-Dairy Creamer 35,Sak kraft 25 kg dengan inner PE,Kadar air,%,,3.0,,SOP-QC-01
+NDC-35,Non-Dairy Creamer 35,Sak kraft 25 kg dengan inner PE,Protein,%,1.5,,,Kjeldahl (prosedur di luar dokumen ini)
+NDC-35,Non-Dairy Creamer 35,Sak kraft 25 kg dengan inner PE,Indeks tidak larut,ml,,0.5,,SOP-QC-02 Bagian A
+NDC-35,Non-Dairy Creamer 35,Sak kraft 25 kg dengan inner PE,pH larutan 10%,,6.5,7.5,,pH meter
+NDC-35,Non-Dairy Creamer 35,Sak kraft 25 kg dengan inner PE,Bulk density,g/ml,0.40,0.55,,Gelas ukur 100 ml (prosedur di luar dokumen ini)
+NDC-35,Non-Dairy Creamer 35,Sak kraft 25 kg dengan inner PE,Warna bubuk (L*),,90,,,Kolorimeter
+NDC-35,Non-Dairy Creamer 35,Sak kraft 25 kg dengan inner PE,Feathering,,,,Tidak terjadi feathering,SOP-QC-02 Bagian B
+NDC-35,Non-Dairy Creamer 35,Sak kraft 25 kg dengan inner PE,Angka Lempeng Total,koloni/g,,5000,,Lab mikrobiologi (prosedur di luar dokumen ini)
+NDC-35,Non-Dairy Creamer 35,Sak kraft 25 kg dengan inner PE,Koliform,koloni/g,,10,,Lab mikrobiologi (prosedur di luar dokumen ini)
+NDC-35,Non-Dairy Creamer 35,Sak kraft 25 kg dengan inner PE,Kapang dan khamir,koloni/g,,50,,Lab mikrobiologi (prosedur di luar dokumen ini)
+NDC-35,Non-Dairy Creamer 35,Sak kraft 25 kg dengan inner PE,Salmonella,,,,Negatif per 25 g,Lab mikrobiologi (prosedur di luar dokumen ini)
+NDC-35,Non-Dairy Creamer 35,Sak kraft 25 kg dengan inner PE,Umur simpan,bulan,,,18 bulan dalam kemasan asli yang belum dibuka,
+NDC-35,Non-Dairy Creamer 35,Sak kraft 25 kg dengan inner PE,Kondisi simpan,,,,"Suhu maksimal 30 °C, RH maksimal 70%, tidak terkena sinar matahari langsung, palet berjarak minimal 30 cm dari dinding",
+NDC-28,Non-Dairy Creamer 28,Sak kraft 25 kg dengan inner PE,Kadar lemak,%,26.0,30.0,,Mojonnier (prosedur di luar dokumen ini)
+NDC-28,Non-Dairy Creamer 28,Sak kraft 25 kg dengan inner PE,Kadar air,%,,3.5,,SOP-QC-01
+NDC-28,Non-Dairy Creamer 28,Sak kraft 25 kg dengan inner PE,Protein,%,1.5,,,Kjeldahl (prosedur di luar dokumen ini)
+NDC-28,Non-Dairy Creamer 28,Sak kraft 25 kg dengan inner PE,Indeks tidak larut,ml,,0.5,,SOP-QC-02 Bagian A
+NDC-28,Non-Dairy Creamer 28,Sak kraft 25 kg dengan inner PE,pH larutan 10%,,6.5,7.5,,pH meter
+NDC-28,Non-Dairy Creamer 28,Sak kraft 25 kg dengan inner PE,Bulk density,g/ml,0.38,0.52,,Gelas ukur 100 ml (prosedur di luar dokumen ini)
+NDC-28,Non-Dairy Creamer 28,Sak kraft 25 kg dengan inner PE,Warna bubuk (L*),,90,,,Kolorimeter
+NDC-28,Non-Dairy Creamer 28,Sak kraft 25 kg dengan inner PE,Feathering,,,,Tidak terjadi feathering,SOP-QC-02 Bagian B
+NDC-28,Non-Dairy Creamer 28,Sak kraft 25 kg dengan inner PE,Angka Lempeng Total,koloni/g,,5000,,Lab mikrobiologi (prosedur di luar dokumen ini)
+NDC-28,Non-Dairy Creamer 28,Sak kraft 25 kg dengan inner PE,Koliform,koloni/g,,10,,Lab mikrobiologi (prosedur di luar dokumen ini)
+NDC-28,Non-Dairy Creamer 28,Sak kraft 25 kg dengan inner PE,Kapang dan khamir,koloni/g,,50,,Lab mikrobiologi (prosedur di luar dokumen ini)
+NDC-28,Non-Dairy Creamer 28,Sak kraft 25 kg dengan inner PE,Salmonella,,,,Negatif per 25 g,Lab mikrobiologi (prosedur di luar dokumen ini)
+NDC-28,Non-Dairy Creamer 28,Sak kraft 25 kg dengan inner PE,Umur simpan,bulan,,,18 bulan dalam kemasan asli yang belum dibuka,
+NDC-28,Non-Dairy Creamer 28,Sak kraft 25 kg dengan inner PE,Kondisi simpan,,,,"Suhu maksimal 30 °C, RH maksimal 70%, tidak terkena sinar matahari langsung, palet berjarak minimal 30 cm dari dinding",
+FFP-26,Fat Filled Milk Powder 26,Sak kraft 25 kg dengan inner PE,Kadar lemak,%,25.0,27.0,,Mojonnier (prosedur di luar dokumen ini)
+FFP-26,Fat Filled Milk Powder 26,Sak kraft 25 kg dengan inner PE,Kadar air,%,,4.0,,SOP-QC-01
+FFP-26,Fat Filled Milk Powder 26,Sak kraft 25 kg dengan inner PE,Protein,%,18.0,,,Kjeldahl (prosedur di luar dokumen ini)
+FFP-26,Fat Filled Milk Powder 26,Sak kraft 25 kg dengan inner PE,Indeks tidak larut,ml,,1.0,,SOP-QC-02 Bagian A
+FFP-26,Fat Filled Milk Powder 26,Sak kraft 25 kg dengan inner PE,pH larutan 10%,,6.4,7.0,,pH meter
+FFP-26,Fat Filled Milk Powder 26,Sak kraft 25 kg dengan inner PE,Bulk density,g/ml,0.45,0.60,,Gelas ukur 100 ml (prosedur di luar dokumen ini)
+FFP-26,Fat Filled Milk Powder 26,Sak kraft 25 kg dengan inner PE,Warna bubuk (L*),,85,,,Kolorimeter
+FFP-26,Fat Filled Milk Powder 26,Sak kraft 25 kg dengan inner PE,Angka Lempeng Total,koloni/g,,10000,,Lab mikrobiologi (prosedur di luar dokumen ini)
+FFP-26,Fat Filled Milk Powder 26,Sak kraft 25 kg dengan inner PE,Koliform,koloni/g,,10,,Lab mikrobiologi (prosedur di luar dokumen ini)
+FFP-26,Fat Filled Milk Powder 26,Sak kraft 25 kg dengan inner PE,Kapang dan khamir,koloni/g,,100,,Lab mikrobiologi (prosedur di luar dokumen ini)
+FFP-26,Fat Filled Milk Powder 26,Sak kraft 25 kg dengan inner PE,Salmonella,,,,Negatif per 25 g,Lab mikrobiologi (prosedur di luar dokumen ini)
+FFP-26,Fat Filled Milk Powder 26,Sak kraft 25 kg dengan inner PE,Umur simpan,bulan,,,12 bulan dalam kemasan asli yang belum dibuka,
+FFP-26,Fat Filled Milk Powder 26,Sak kraft 25 kg dengan inner PE,Kondisi simpan,,,,"Suhu maksimal 30 °C, RH maksimal 70%, tidak terkena sinar matahari langsung, palet berjarak minimal 30 cm dari dinding",
+KRM-R500,Krimer Kopi Retail 500 g,Pouch laminasi 500 g dengan zipper,Kadar lemak,%,33.0,37.0,,Mojonnier (prosedur di luar dokumen ini)
+KRM-R500,Krimer Kopi Retail 500 g,Pouch laminasi 500 g dengan zipper,Kadar air,%,,3.0,,SOP-QC-01
+KRM-R500,Krimer Kopi Retail 500 g,Pouch laminasi 500 g dengan zipper,Protein,%,1.5,,,Kjeldahl (prosedur di luar dokumen ini)
+KRM-R500,Krimer Kopi Retail 500 g,Pouch laminasi 500 g dengan zipper,Indeks tidak larut,ml,,0.5,,SOP-QC-02 Bagian A
+KRM-R500,Krimer Kopi Retail 500 g,Pouch laminasi 500 g dengan zipper,pH larutan 10%,,6.5,7.5,,pH meter
+KRM-R500,Krimer Kopi Retail 500 g,Pouch laminasi 500 g dengan zipper,Warna bubuk (L*),,90,,,Kolorimeter
+KRM-R500,Krimer Kopi Retail 500 g,Pouch laminasi 500 g dengan zipper,Feathering,,,,Tidak terjadi feathering,SOP-QC-02 Bagian B
+KRM-R500,Krimer Kopi Retail 500 g,Pouch laminasi 500 g dengan zipper,Angka Lempeng Total,koloni/g,,5000,,Lab mikrobiologi (prosedur di luar dokumen ini)
+KRM-R500,Krimer Kopi Retail 500 g,Pouch laminasi 500 g dengan zipper,Koliform,koloni/g,,10,,Lab mikrobiologi (prosedur di luar dokumen ini)
+KRM-R500,Krimer Kopi Retail 500 g,Pouch laminasi 500 g dengan zipper,Kapang dan khamir,koloni/g,,50,,Lab mikrobiologi (prosedur di luar dokumen ini)
+KRM-R500,Krimer Kopi Retail 500 g,Pouch laminasi 500 g dengan zipper,Salmonella,,,,Negatif per 25 g,Lab mikrobiologi (prosedur di luar dokumen ini)
+KRM-R500,Krimer Kopi Retail 500 g,Pouch laminasi 500 g dengan zipper,Berat bersih,g,,,Rata-rata per lot minimal 500 g. Kekurangan per kemasan maksimal 15 g (berat per kemasan minimal 485 g),Timbangan terkalibrasi
+KRM-R500,Krimer Kopi Retail 500 g,Pouch laminasi 500 g dengan zipper,Umur simpan,bulan,,,12 bulan dalam kemasan asli yang belum dibuka,
+KRM-R500,Krimer Kopi Retail 500 g,Pouch laminasi 500 g dengan zipper,Kondisi simpan,,,,"Suhu maksimal 30 °C. Setelah dibuka, tutup rapat zipper dan habiskan dalam 30 hari",
