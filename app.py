@@ -36,8 +36,9 @@ st.caption(
     "Jawaban hanya diambil dari dokumen, lengkap dengan sumbernya."
 )
 st.info(
-    "Semua dokumen di demo ini fiktif. Jangan masukkan data rahasia, "
-    "karena pertanyaan dikirim ke Gemini API versi gratis."
+    "Semua dokumen di demo ini fiktif. Asisten ini bisa salah mengambil angka, "
+    "jadi cocokkan jawabannya dengan dokumen sumber di bawah sebelum dipakai. "
+    "Jangan masukkan data rahasia, karena pertanyaan dikirim ke Gemini API versi gratis."
 )
 
 def has_api_key():
